@@ -24,8 +24,6 @@ month = st.sidebar.selectbox(
     ('Select',8,9,10,11,12)
 )
 
-
-
 st.title("TDI Milestone")
 
 if (ticker != '') and (year != 'Select') and (month !='Select'):
@@ -53,9 +51,6 @@ if (ticker != '') and (year != 'Select') and (month !='Select'):
     else:
         st.warning('No data. Change input')
 
-
-
-        
-
+# Test
 # streamlit run app.py
 
