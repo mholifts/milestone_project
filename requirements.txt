@@ -5,6 +5,5 @@ python-dotenv
 altair
 bokeh
 requests
-boto.s3.connection
-time
+
 
