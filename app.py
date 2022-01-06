@@ -2,9 +2,9 @@ import streamlit as st
 from bokeh.plotting import figure
 import pandas as pd
 import requests
-from boto.s3.connection import S3Connection
+import os
 
-API_KEY = S3Connection(os.environ['API_KEY'])
+API_KEY = os.environ['API_KEY']
 
 ticker = ''
 year = 'Select'
