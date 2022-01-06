@@ -4,7 +4,6 @@ import pandas as pd
 import requests
 import os
 
-API_KEY = os.environ['API_KEY']
 
 ticker = ''
 year = 'Select'
@@ -27,7 +26,7 @@ month = st.sidebar.selectbox(
 st.title("TDI Milestone")
 
 if (ticker != '') and (year != 'Select') and (month !='Select'):
-    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ ticker + '&apikey='+ API_KEY
+    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ ticker + '&apikey='+ os.environ['API_KEY']
     r = requests.get(url)
     data = r.json()
 
